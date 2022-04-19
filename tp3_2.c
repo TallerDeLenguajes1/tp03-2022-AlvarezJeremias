@@ -18,4 +18,7 @@ void main () {
     for (int i=0;i<cantidad;i++) {
         puts(V[i]);
     }
+    free (buff);
+    free (V);
+    
 }
