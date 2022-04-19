@@ -30,8 +30,8 @@ void main () {
     printf ("\n\n-Bien, Ahora ingrese los datos de los clientes:");
     for (int i=0;i<cantidadClientes;i++) {
         printf("\nCliente numero %d \n\n Ingrese el nombre del cliente: ",i+1);
+        (arregloClientes+i)->nombreCliente=(char*) malloc(100*sizeof(char));
         gets((arregloClientes+i)->nombreCliente);
-        fflush(stdin);
         (arregloClientes+i)->clienteID=i+1;
         (arregloClientes+i)->cantidadProductosAPedir=1 + rand() % 5;
         printf("\ncantidad de productos  %d", (arregloClientes+i)->cantidadProductosAPedir);
